@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record</title>
+    <link rel="icon" href="./education.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Student Form</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td><input type="text" id="name"></td>
+        </tr>
+
+        <tr>
+            <th>Age</th>
+            <td><input type="text" id="age"></td>
+        </tr>
+
+        <tr>
+            <th>Gender</th>
+            <td>
+                <input type="radio" id="gender-male" name="Gender" value="Male">
+                <label for="gender-male">Male</label>
+                <input type="radio" id="gender-female" name="Gender" value="Female">
+                <label for="gender-female">Female</label>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Course</th>
+            <td>
+                <select id="course" name="Course">
+                    <option value="Python Programming">Python Programming</option>
+                    <option value="SQL Programming">SQL Programming</option>
+                    <option value="Django Framework">Django Framework</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript Programming">JavaScript Programming</option>
+                    <option value="React JS">React JS</option>
+                    <option value="Git and GitHub">Git and GitHub</option>
+                    <option value="Problem Solving">Problem Solving</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>E-mail</th>
+            <td><input type="email" id="email"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button id="save-btn" onclick="updateRecord()">Save</button></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table id="student-record">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Course</th>
+            <th>E-mail</th>
+            <th>Action</th>
+        </tr>
+
+        <!-- <tr>
+            <td id="k">Gowtham</td>
+            <td>20</td>
+            <td>Male</td>
+            <td>Python Programming</td>
+            <td>gowtham@gmail.com</td>
+            <td><button onclick="deleteRecord(event)" id="dlt-btn">Delete</button></td>
+        </tr> -->
+    </table>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

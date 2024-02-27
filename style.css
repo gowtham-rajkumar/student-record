@@ -1,0 +1,16 @@
+table,td,th{
+    border: 2px solid black;
+}
+
+#save-btn{
+    width: 100%;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#dlt-btn{
+    background-color: red;
+    cursor: pointer;
+}
+
+
